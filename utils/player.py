@@ -2,14 +2,14 @@ from .card import Card
 
 import random
 
-class Player():
-    def __init__(self, name):
+
+class Player:
+    def __init__(self, name: str):
         self.cards = []
         self.turn_count = 1
         self.number_of_cards = 0
         self.history = []
         self.name = name
-
 
     def play(self):
         # Randomly pick a card in cards
